@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8464804909722981097}
   - component: {fileID: 8464804909722981098}
   - component: {fileID: 8464804909722981099}
-  - component: {fileID: 8464804909722981096}
+  - component: {fileID: 81289053}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -219,7 +219,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8464804909722981096
+--- !u!114 &81289053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8464804909722981102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18d107cb2b3f64e6395f1dc66c939509, type: 3}
+  m_Script: {fileID: 11500000, guid: ae90596c4b3474285b22a202cff581e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifeCounter: {fileID: 8464804910870339768}

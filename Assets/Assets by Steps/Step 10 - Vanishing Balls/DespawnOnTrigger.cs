@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DespawnOnTrigger : MonoBehaviour
+namespace  Step10
 {
-    [SerializeField] LifeCounter lifeCounter;
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    public class DespawnOnTrigger : MonoBehaviour
     {
-        if(collider2D.gameObject.layer != 8)
+        private void OnTriggerEnter2D(Collider2D collider2D)
         {
-            return;
-        }
+            if(collider2D.gameObject.layer != 8)
+            {
+                return;
+            }
 
-        lifeCounter.ReduceLife();
-        Destroy(collider2D.gameObject);
+            Destroy(collider2D.gameObject);
+        }
     }
 }
+
