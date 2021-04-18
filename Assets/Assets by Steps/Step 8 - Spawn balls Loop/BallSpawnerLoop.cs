@@ -16,9 +16,9 @@ public class BallSpawnerLoop : MonoBehaviour
     {
         for (var i = 0; i < 3; i++)
         {
-            Debug.Log("SpawnWithDelay");
+            // Debug.Log("SpawnWithDelay");
             yield return new WaitForSeconds(0.2f);
-            Instantiate(ballPrefab, spawnPosition.position, Quaternion.identity);
+            Instantiate(ballPrefab, spawnPosition);
         }
     }
 
