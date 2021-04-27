@@ -14,7 +14,7 @@ public class BallSpawnerLoop : MonoBehaviour
 
     private IEnumerator SpawnWithDelay()
     {
-        for (var i = 0; i < 3; i++)
+        for (var i = 0; i < 1; i++)
         {
             // Debug.Log("SpawnWithDelay");
             yield return new WaitForSeconds(0.2f);
