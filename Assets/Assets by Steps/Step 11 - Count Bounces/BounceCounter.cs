@@ -20,7 +20,7 @@ public class BounceCounter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider2D)
     {
-        if(collider2D.gameObject.layer != 8)
+        if(collider2D.gameObject.tag != "Ball")
         {
             return;
         }
