@@ -26,13 +26,20 @@ namespace step10
                 Rigidbody2D ballrigidBody = ball.GetComponent<Rigidbody2D>();
                 if(ballrigidBody != null)
                 {
-                    ballrigidBody.velocity = Vector2.zero;
-                    ballrigidBody.AddForce(new Vector2(1, 0) * Random.Range(-randomForceStrength,randomForceStrength));
+                    var strength = Random.Range(5, randomForceStrength);
+                    strength *= RandomSign();
+
+                    ballrigidBody.AddForce(new Vector2(1, 0) * strength);
                 } 
             }
 
             Destroy(originalGO);
             Destroy(gameObject);
+        }
+
+        private int RandomSign () 
+        {
+            return Random.value < .5f? 1 : -1;
         }
     }
 }
