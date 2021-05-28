@@ -7,7 +7,8 @@ namespace Step11
     {
         [SerializeField] private TextMeshProUGUI counterLabel;
         private int counter;
-        
+        public int Score => counter; //used in Step 13
+
         private void Awake()
         {
             Reset();
